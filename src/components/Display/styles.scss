@@ -1,11 +1,23 @@
 .Display-container {
-  text-align: left;
-  background: #1da7f7;
-  margin: 0.5rem;
+  display: flex;
+  background: black;
+  width: max-content;
 
-  .Display-words {
-    color: white;
-    font-weight: 600;
-    font-size: 0.5rem;
+  border: 5px solid silver;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  
+  .Display-body {
+    text-align: left;
+    background: #1da7f7;
+    margin: 0.5rem;
+
+    .Display-words {
+      color: white;
+      font-weight: 600;
+      font-size: 0.5rem;
+    }
   }
 }

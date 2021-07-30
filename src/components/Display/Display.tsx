@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Bank from '../Bank';
 import './styles.scss';
 
 interface WebMIDIProps {
@@ -25,14 +26,15 @@ export function Display(mprops: WebMIDIProps) {
     }, [mprops.isConnected, mprops.WebMidi.inputs])
 
     return (
-        <>
-            <div className="Display-container">
+        <div className="Display-container">
+            <Bank WebMidi={mprops.WebMidi} isConnected={mprops.isConnected} />
+            <div className="Display-body">
                 <p className="Display-words">
                     Device: {inputs.name}
                     <br />
                     Status: {inputs.state}
                 </p>
             </div>
-        </>
+        </div>
     )
 }
