@@ -1,15 +1,18 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Display from '../Display';
-import WebMidi from 'webmidi';
 import './styles.scss';
 
-function G7() {
-    const [isConnected, setIsConnected] = useState<boolean>(false);
+interface WebMIDIProps {
+    WebMidi: any,
+    isConnected: boolean
+}
 
+
+function G7(mprops: WebMIDIProps) {
     return (
         <section className="G7-container">
             <div className="G7-body">
-                <Display WebMidi={WebMidi} isConnected={isConnected} />
+                <Display WebMidi={mprops.WebMidi} isConnected={mprops.isConnected} />
             </div>
         </section>
     )

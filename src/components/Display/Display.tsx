@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './styles.scss';
 
-interface MIDIProps {
+interface WebMIDIProps {
     WebMidi: any,
     isConnected: boolean
 }
@@ -15,12 +15,11 @@ interface IOProps {
     type?: string
 }
 
-export function Display(mprops: MIDIProps) {
+export function Display(mprops: WebMIDIProps) {
     const [inputs, setInputs] = useState<IOProps>({});
 
     useEffect(() => {
         if (mprops.isConnected === true) {
-            console.log(mprops.WebMidi.inputs)
             setInputs(mprops.WebMidi.inputs[0]);
         }
     }, [mprops.isConnected, mprops.WebMidi.inputs])
@@ -31,7 +30,7 @@ export function Display(mprops: MIDIProps) {
                 <p className="Display-words">
                     Device: {inputs.name}
                     <br />
-                    Status: {inputs.connection}
+                    Status: {inputs.state}
                 </p>
             </div>
         </>

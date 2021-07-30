@@ -42,7 +42,7 @@ function MIDIConnection() {
         <div className="MIDIConnection-container">
             <header className="MIDIConnection-body" >
                 {isConnected === true ?
-                    <G7 />
+                    <G7 WebMidi={WebMidi} isConnected={isConnected} />
                     :
                     <>
                         <img className="MIDIConnection-logo" src="midiconnector.png" alt="MIDI Connect" />
