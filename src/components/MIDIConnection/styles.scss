@@ -1,5 +1,5 @@
-.MIDIConnection-container{
-    text-align: center;
+.MIDIConnection-container {
+  text-align: center;
 }
 
 .MIDIConnection-header {
@@ -13,11 +13,29 @@
   color: white;
 }
 
-// @keyframes App-logo-spin {
-//   from {
-//     transform: rotate(0deg);
-//   }
-//   to {
-//     transform: rotate(360deg);
-//   }
-// }
+.MIDIConnection-logo {
+  width: 7%;
+  min-width: 30px;
+}
+
+.MIDIConnection-loading:after {
+  content: ".";
+  animation: dots 1s steps(1, end) infinite;
+}
+
+@keyframes dots {
+  20% {
+    color: #333;
+    text-shadow: 0.25em 0 0 #333, 0.5em 0 0 #333;
+  }
+  40% {
+    color: white;
+    text-shadow: 0.25em 0 0 #333, 0.5em 0 0 #333;
+  }
+  60% {
+    text-shadow: 0.25em 0 0 white, 0.5em 0 0 #333;
+  }
+  100% {
+    text-shadow: 0.25em 0 0 white, 0.5em 0 0 white;
+  }
+}

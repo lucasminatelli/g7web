@@ -5,7 +5,9 @@ function MIDIConnection() {
     return (
         <div className="MIDIConnection-container">
             <header className="MIDIConnection-header" >
-                Midi connection
+                <img className="MIDIConnection-logo" src="midiconnector.png" alt="MIDI Connect" />
+                please connect your MIDI Adpater
+                <div className="MIDIConnection-loading" />
             </header>
         </div>
     )
