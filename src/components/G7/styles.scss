@@ -1,0 +1,17 @@
+.G7-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .G7-body {
+    background-color: #3e3e40;
+    width: 500px;
+    height: 275px;
+
+    border: solid 15px black;
+    border-top: none;
+    border-bottom: none;
+  }
+}

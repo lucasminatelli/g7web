@@ -2,7 +2,7 @@
   text-align: center;
 }
 
-.MIDIConnection-header {
+.MIDIConnection-body {
   background-color: #333333;
   min-height: 100vh;
   display: flex;
@@ -18,16 +18,13 @@
   min-width: 30px;
 }
 
+.MIDIConnection-disconnected {
+  color: #f00;
+}
+
 .MIDIConnection-loading:after {
   content: ".";
   animation: dots 1s steps(1, end) infinite;
-}
-
-.MIDIConnection-connected {
-  color: #0f0;
-}
-.MIDIConnection-disconnected {
-  color: #f00;
 }
 
 @keyframes dots {

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import WebMidi from 'webmidi';
+import G7 from '../G7';
 import './styles.scss';
 
 function MIDIConnection() {
@@ -39,16 +40,17 @@ function MIDIConnection() {
     // Return
     return (
         <div className="MIDIConnection-container">
-            <header className="MIDIConnection-header" >
-                <img className="MIDIConnection-logo" src="midiconnector.png" alt="MIDI Connect" />
-                please connect your MIDI Adpater
-                <div>{isConnected === true ?
-                    <div className="MIDIConnection-connected">connected</div>
+            <header className="MIDIConnection-body" >
+                {isConnected === true ?
+                    <G7 />
                     :
-                    <div className="MIDIConnection-disconnected">disconnected</div>
+                    <>
+                        <img className="MIDIConnection-logo" src="midiconnector.png" alt="MIDI Connect" />
+                        please connect your MIDI Adpater
+                        <div className="MIDIConnection-disconnected">disconnected</div>
+                        <div className="MIDIConnection-loading" />
+                    </>
                 }
-                </div>
-                {isConnected === false ? <div className="MIDIConnection-loading" /> : ""}
             </header>
         </div>
     )
