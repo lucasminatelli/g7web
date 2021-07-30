@@ -1,0 +1,27 @@
+[
+    {
+        "name": "Comp",
+        "controller": 64,
+        "enabled": false
+    },
+    {
+        "name": "ZNR",
+        "controller": 66,
+        "enabled": false
+    },
+    {
+        "name": "MOD/EFX2",
+        "controller": 69,
+        "enabled": false
+    },
+    {
+        "name": "DELAY",
+        "controller": 70,
+        "enabled": false
+    },
+    {
+        "name": "REVERB",
+        "controller": 71,
+        "enabled": false
+    }
+]
