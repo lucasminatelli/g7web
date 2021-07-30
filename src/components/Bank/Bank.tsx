@@ -22,7 +22,7 @@ export default function Bank(mprops: MIDIProps) {
                 <select className="Bank-select"
                     onChange={(e) => handleChange(e.target.value)}>
                     {banks.map(b => (
-                        <option key={b.value} value={b.value}>{b.name} [{b.position}]</option>
+                        <option key={b.value} value={b.value}>{b.name} .{b.position}</option>
                     ))}
                 </select>
             </div>
