@@ -10,8 +10,37 @@
     width: 600px;
     height: 330px;
 
-    border: solid 15px black;
+    border: solid 15px #222;
     border-top: none;
     border-bottom: none;
+
+    .G7-expression {
+      margin-left: auto;
+      margin-right: 5px;
+      margin-top: -50px;
+
+      background: #2c2c2e;
+      width: 110px;
+      height: 300px;
+
+      border: 8px solid silver;
+      border-top-left-radius: 25px;
+      border-top-right-radius: 25px;
+      border-bottom-left-radius: 25px;
+      border-bottom-right-radius: 25px;
+      span {
+        font-size: 100px;
+        margin-top: 30%;
+        color: #27282a;
+        font-weight: bold;
+
+        writing-mode: vertical-rl;
+        -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        transform: rotate(180deg);
+      }
+    }
   }
 }

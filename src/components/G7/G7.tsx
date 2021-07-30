@@ -10,11 +10,16 @@ interface WebMIDIProps {
 
 function G7(mprops: WebMIDIProps) {
     return (
-        <section className="G7-container">
-            <div className="G7-body">
-                <Display WebMidi={mprops.WebMidi} isConnected={mprops.isConnected} />
-            </div>
-        </section>
+        <>
+            <section className="G7-container">
+                <div className="G7-body">
+                    <Display WebMidi={mprops.WebMidi} isConnected={mprops.isConnected} />
+                    <section className="G7-expression">
+                        <span>ZOOM</span>
+                    </section>
+                </div>
+            </section>
+        </>
     )
 }
 
