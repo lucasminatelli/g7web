@@ -7,30 +7,30 @@
 
   .G7-body {
     background-color: #3e3e40;
-    width: 600px;
-    height: 330px;
+    width: 100vmin;
+    height: 55vmin;
 
-    border: solid 15px #222;
+    border: solid 2vmin #222;
     border-top: none;
     border-bottom: none;
 
     .G7-expression {
       margin-left: auto;
-      margin-right: 5px;
-      margin-top: -50px;
+      margin-right: 1vmin;
+      margin-top: -5vmin;
 
       background: #2c2c2e;
-      width: 110px;
-      height: 300px;
+      width: 18.3vmin;
+      height: 50vmin;
 
-      border: 8px solid silver;
-      border-top-left-radius: 25px;
-      border-top-right-radius: 25px;
-      border-bottom-left-radius: 25px;
-      border-bottom-right-radius: 25px;
+      border: 1vmin solid silver;
+      border-top-left-radius: 3vmin;
+      border-top-right-radius: 3vmin;
+      border-bottom-left-radius: 3vmin;
+      border-bottom-right-radius: 3vmin;
       span {
-        font-size: 100px;
-        margin-top: 30%;
+        font-size: 17vmin;
+        margin-top: 5vmin;
         color: #27282a;
         font-weight: bold;
 
