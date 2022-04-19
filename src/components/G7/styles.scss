@@ -14,6 +14,17 @@
     border-top: none;
     border-bottom: none;
 
+    display: flex;
+    
+    .G7-efx-chain {
+      display: flex;
+      width: 75vmin;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      position: relative;
+      top: 13vmin;
+    }
+
     .G7-expression {
       margin-left: auto;
       margin-top: 1vmin;

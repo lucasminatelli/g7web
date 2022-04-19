@@ -1,0 +1,19 @@
+.Switch-container {
+    float: left;
+    width: 20vmin;
+    min-height: 18vmin;
+    .Switch-circle{
+        border: 0vmin solid;
+
+        width: auto;
+        height: auto;
+        margin: 0 auto;
+        padding: 10px;
+        position: relative;
+
+        border-radius: 50%;
+        height: 3vmin;
+        width: 3vmin;
+        background-color: silver;
+    }
+}
