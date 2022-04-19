@@ -1,12 +1,12 @@
 .Bank-container {
   display: flex;
   flex-direction: column;
-  margin: 0.5rem;
+  margin: 1vmin;
 
   .Bank-select {
     color: red;
     background: black;
     font-family: "digital-7", sans-serif;
-    font-size: 1.5rem;
+    font-size: 5vmin;
   }
 }
