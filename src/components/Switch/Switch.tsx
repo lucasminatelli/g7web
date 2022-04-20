@@ -1,3 +1,4 @@
+import { useState } from "react";
 import "./styles.scss";
 interface MIDIProps {
   WebMidi: any,
@@ -7,9 +8,10 @@ interface MIDIProps {
   enabled: boolean,
 }
 
-
 function Switch(mprops: MIDIProps) {
+  const [isEnabled, setIsEnabled] = useState<boolean>();
   const handleChange = (e: any, c: number) => {
+    setIsEnabled(e);
     if (mprops.isConnected === true) {
             var output = mprops.WebMidi.getOutputById(mprops.WebMidi.inputs[0].id);
             output = mprops.WebMidi.getOutputByName(mprops.WebMidi.inputs[0].name);
@@ -19,7 +21,7 @@ function Switch(mprops: MIDIProps) {
   return (
     <div className='Switch-container'>
       <p>{mprops?.name}</p>
-      <div className='Switch-circle'></div>
+      <div className='Switch-circle' onClick={() => handleChange(mprops.enabled, mprops.controller)}></div>
     </div>
   )
 }
