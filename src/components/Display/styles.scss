@@ -2,6 +2,7 @@
   display: flex;
   background: black;
   width: max-content;
+  box-shadow: 0 0 0.3em black;
 
   position: absolute;
 
@@ -17,6 +18,7 @@
   .Display-body {
     text-align: left;
     background: #1da7f7;
+    box-shadow: 0 0 0.2em #1da7f7;
     margin: 1vmin;
 
     .Display-words {

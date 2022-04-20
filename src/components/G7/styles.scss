@@ -5,11 +5,14 @@
   align-items: center;
   justify-content: center;
 
+  
   .G7-body {
     background-color: #3e3e40;
     width: 100vmin;
     height: 55vmin;
 
+    box-shadow: 0 0 1em black;
+    
     border: solid 2vmin #222;
     border-top: none;
     border-bottom: none;
@@ -33,6 +36,7 @@
       position: relative;
 
       background: #2c2c2e;
+      box-shadow: 0 0 0.3em black;
       width: 18.3vmin;
       height: 50vmin;
 
