@@ -23,11 +23,15 @@ function G7(mprops: WebMIDIProps) {
                                 efx.map(e => {
                                     return (
                                         <Switch
+                                            key={e?.controller}
                                             WebMidi={mprops?.WebMidi}
                                             isConnected={mprops?.isConnected}
                                             name={e?.name}
                                             controller={e?.controller}
-                                            enabled={e?.enabled} />
+                                            enabled={e?.enabled}
+                                            efx={efx}
+                                            setEfx={setEfx}
+                                        />
                                     )
                                 })
                             }
